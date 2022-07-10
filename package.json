@@ -1,0 +1,19 @@
+{
+  "name": "dwn_uptobox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.0.3",
+    "axios": "^0.27.2",
+    "tslint": "^5.12.1",
+    "typescript": "^4.7.4"
+  }
+}
