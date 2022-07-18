@@ -1,15 +1,25 @@
 import { UptoboxClient } from "./controller/uptobox";
 
+var args = process.argv.slice(2);
 
-async function main() {
+async function main(args:string[]) {
     console.log('----- start -----');
+    if(args.length > 0 && args.length <=1) {
 
-    const o = new UptoboxClient();
+        const url = args[0];
+        const o = new UptoboxClient();
     
-    const link = await o.GetLink('https://uptobox.com/8nydl8ahccnm');
-    console.log(`link => ${link}`);
-    o.Download(link);
+        const link = await o.GetLink(url);
+        console.log(`link => ${link}`);
+        o.Download(link);
+    }
+    else {
+        console.log('no input parameter');
+    }
+    
+
+    
     
 }
 
-main();
+main(args);

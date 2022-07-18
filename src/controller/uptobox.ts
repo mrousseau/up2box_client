@@ -11,13 +11,13 @@ constructor() {}
         const code = array[array.length-1];
         let link = '';   
 
-        var config = {
+        var param = {
             method: 'get',
             url: `https://uptobox.com/api/link?file_code=${code}&token=${config.token}`,
             headers: { }
         };
 
-        await axios(config)
+        await axios(param)
         .then(function (response) {
             console.log('then')
             const uptbxReturn = response.data;
