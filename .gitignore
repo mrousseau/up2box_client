@@ -1,5 +1,4 @@
 dist/
 node_modules/
-src/config/*
-
+src/config/config.ts
 yarn.lock

@@ -1,4 +1,4 @@
 export class config {
-    static token = "<token>";
-    static path = "<path_target>";
+    static token = "<your_id>>";
+    static path = "<your_path>";
 }

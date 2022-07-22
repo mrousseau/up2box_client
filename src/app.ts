@@ -10,8 +10,7 @@ async function main(args:string[]) {
         const o = new UptoboxClient();
     
         const link = await o.GetLink(url);
-        console.log(`link => ${link}`);
-        o.Download(link);
+        o.Download(link); 
     }
     else {
         console.log('no input parameter');
